@@ -1,4 +1,4 @@
-# voyage-project-tier2-menu-scheduler
+# voyage-project-tier3-menu-scheduler
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@ This project focuses on developing a menu scheduling application that allows man
 
 ![Weekly Menu Scheduler](./assets/meal_planner.jpg)
 
-In this voyage, your team will design and build an intuitive web application to simplify menu planning and ensure inclusivity for all employees, leveraging JSON-based datasets for dishes and allergy details.
+In this voyage, your team will design and build an intuitive web application to simplify menu planning and ensure inclusivity for all employees, leveraging dishes API.
 
 ## General Instructions
 
@@ -42,12 +42,15 @@ implement to enhance this app, if time permits.
 
 #### Structure
 
-- [ ] This is a purely frontend application. No backend is required.
+- [ ] This is a full-stack application. Frontend and backend are required.
 - [ ] You may use any languages, tools, or libraries you prefer when designing and building this app.
 - [ ] You may **_NOT_** use AI-based solution generators like GitHub Copilot.
 - [ ] Useful links and resources:
   - [Print React Component](https://www.npmjs.com/package/react-to-print)
   - [Dishes API](https://menus-api.vercel.app/dishes)
+  - [EmailJS](https://www.emailjs.com/docs)
+  - [Github Authentication](https://www.npmjs.com/package/oauth-client-github)
+  - [Google Authentication](https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid) A detailed guide on how to obtain an API key and perform Google Authentication.
 
 #### Styling
 
@@ -59,14 +62,20 @@ implement to enhance this app, if time permits.
 #### Functionality
 - Application Overview
 
-  - [ ] Develop a responsive single-page application (SPA) to facilitate weekly menu scheduling.
+  - [ ] Develop a fullstack (frontend & backend) application to facilitate weekly menu scheduling.
   - [ ] Ensure the application is user-friendly, accessible, and visually appealing.
+
+- Authentication
+  - [ ] Implement a register & login feature.
+  - [ ] Authenticate users via Google or GitHub OAuth securely. (links are available in the resources section)
 
 - Allergy Input and Management
 
   - [ ] Enable managers to input workers' allergies directly within the app using a user-friendly form or interface.
   - [ ] Allow multiple allergy inputs, with the option to save and manage them for future menu planning.
   - [ ] Automatically filter out dishes containing allergens based on workers' allergy data items.
+
+  - [ ] Enable managers to edit and delete an allergy
   
 - Week Scheduling
 
@@ -125,7 +134,9 @@ implement to enhance this app, if time permits.
         
 ### Extras (Not Required)
 
-  - [ ] Enable users to edit and delete an allergy
+  - [ ] Implement a mail SMTP to notify workers by email the menu scheduled for the week.
+
+  - [ ] Use a mailer mocking tool like [EmailJS](https://www.emailjs.com/docs) to simulate sending the email.
 
 ## Acceptance Criteria
 
