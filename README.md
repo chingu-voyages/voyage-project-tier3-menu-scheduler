@@ -119,10 +119,6 @@ implement to enhance this app, if time permits.
   - [ ] Prohibit duplicate dish assignments for the same week
   - [ ] Provide clear error messages when duplicates are detected.
 
-- Data Persistence
-
-  - [ ] Implement local storage to save allergies data in the browser
-
 - User Interface and Experience (UI/UX)
 
   - [ ] Present the finalized weekly menu in an intuitive and readable format, such as (table view, calendar-like grid) suprise us :).
